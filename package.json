@@ -1,19 +1,20 @@
 {
-  "name": "binar-fsw-challenge-04",
-  "version": "1.0.0",
-  "description": "Project HTTP Server dan DOM",
-  "main": "server/index.js",
-  "author": "Fikri Rahmat Nurhidayat <fnurhidayat@binar.co.id>",
-  "license": "MIT",
-  "private": false,
-  "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./public/css/output.css --watch",
-    "start": "node server/index.js"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.4.1"
-  },
-  "dependencies": {
-    "preline": "^2.0.3"
-  }
+    "name": "binar-fsw-challenge-04",
+    "version": "1.0.0",
+    "description": "Project HTTP Server dan DOM",
+    "main": "server/index.js",
+    "author": "Fikri Rahmat Nurhidayat <fnurhidayat@binar.co.id>",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+        "dev": "npx tailwindcss -i ./src/input.css -o ./public/css/output.css --watch",
+        "build": "npx tailwindcss -o ./public/css/output.css --minify",
+        "start": "node server/index.js"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.4.1"
+    },
+    "dependencies": {
+        "preline": "^2.0.3"
+    }
 }
