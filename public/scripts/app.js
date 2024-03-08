@@ -29,7 +29,7 @@ class App {
 
         if (Car.list.length === 0) {
             const node = document.createElement("div");
-            node.innerHTML = `<div class="text-xl">Mobil tidak ditemukan</div>`;
+            node.innerHTML = `<div class="text-2xl italic">Mobil tidak ditemukan</div>`;
             this.carsCardContainer.appendChild(node);
         }
 

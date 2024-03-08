@@ -130,7 +130,7 @@
 
         <!-- Start Hero -->
         <section id="block-hero" class="bg-[#F1F3FF]">
-            <div class="w-full pt-6 lg:pt-20 px-5 lg:px-[8.5rem] relative">
+            <div class="w-full pt-6 lg:pt-20 px-5 lg:px-[8.5rem]">
                 <div class="flex flex-col gap-8 lg:gap-0 lg:flex-row max-w-screen-xl mx-auto">
                     <div class="flex flex-col justify-center items-start mr-auto">
                         <h1 class="max-w-2xl mb-5 text-4xl font-bold">
@@ -148,99 +148,99 @@
                         <img src="./images/img_car.png" alt="mockup" />
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Start Filter -->
-                <section class="absolute -bottom-14 left-56">
-                    <div
-                        class="flex bg-white shadow-md px-6 py-5 gap-10 rounded-xl items-center justify-center"
-                    >
-                        <!-- Tipe Driver -->
-                        <div class="flex flex-col gap-2 w-full">
-                            <label for="tipe-driver">Tipe Driver</label>
-                            <div>
-                                <select
-                                    id="tipe-driver"
-                                    class="py-3 px-4 pe-9 block w-full border-gray-300 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
-                                >
-                                    <option selected>Pilih Tipe Driver</option>
-                                    <option value="true">Dengan Sopir</option>
-                                    <option value="false">Tanpa Sopir (Lepas Kunci)</option>
-                                </select>
-                            </div>
-                        </div>
-                        <!-- Tanggal -->
-                        <div class="flex flex-col gap-2 w-full">
-                            <label for="tanggal">Tanggal</label>
-                            <div>
-                                <div class="relative max-w-sm">
-                                    <input
-                                        id="tanggal"
-                                        datepicker
-                                        type="text"
-                                        class="py-3 px-4 pe-9 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        placeholder="Pilih Tanggal"
-                                        autocomplete="off"
-                                    />
-                                    <div
-                                        class="absolute inset-y-0 right-2 flex items-center pointer-events-none"
-                                    >
-                                        <svg
-                                            class="w-4 h-4 text-gray-500 dark:text-gray-400"
-                                            aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            fill="currentColor"
-                                            viewBox="0 0 20 20"
-                                        >
-                                            <path
-                                                d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
-                                            />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Waktu Jemput/Ambil -->
-                        <div class="flex flex-col gap-2 w-full">
-                            <label for="waktu-jemput">Waktu Jemput/Ambil</label>
-                            <div>
-                                <select
-                                    id="waktu-jemput"
-                                    class="py-3 px-4 pe-9 block w-full border-gray-300 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
-                                >
-                                    <option selected>Pilih Waktu</option>
-                                    <option value="08:00">08:00 WIB</option>
-                                    <option value="09:00">09:00 WIB</option>
-                                    <option value="10:00">10:00 WIB</option>
-                                    <option value="11:00">11:00 WIB</option>
-                                    <option value="12:00">12:00 WIB</option>
-                                </select>
-                            </div>
-                        </div>
-                        <!-- Jumlah Penumpang -->
-                        <div class="flex flex-col gap-2 w-full">
-                            <label for="jumlah-penumpang">Jumlah Penumpang</label>
-                            <div>
-                                <input
-                                    id="jumlah-penumpang"
-                                    type="number"
-                                    class="py-3 px-4 block w-full border-gray-300 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
-                                    placeholder="Jumlah Penumpang"
-                                />
-                            </div>
-                        </div>
-                        <button
-                            id="button-cari-mobil"
-                            class="font-medium w-1/2 bg-green-primary px-3 py-2 rounded-md hover:bg-green-hover text-white transition-all self-end"
+        <!-- Start Filter -->
+        <section class="flex justify-center items-center mt-10">
+            <div
+                class="flex flex-col lg:flex-row bg-white shadow-lg px-6 py-5 gap-10 rounded-xl items-center justify-center"
+            >
+                <!-- Tipe Driver -->
+                <div class="flex flex-col gap-2 w-full">
+                    <label for="tipe-driver">Tipe Driver</label>
+                    <div>
+                        <select
+                            id="tipe-driver"
+                            class="py-3 px-4 pe-9 block w-full border-gray-300 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
                         >
-                            Cari Mobil
-                        </button>
+                            <option selected>Pilih Tipe Driver</option>
+                            <option value="true">Dengan Sopir</option>
+                            <option value="false">Tanpa Sopir (Lepas Kunci)</option>
+                        </select>
                     </div>
-                </section>
+                </div>
+                <!-- Tanggal -->
+                <div class="flex flex-col gap-2 w-full">
+                    <label for="tanggal">Tanggal</label>
+                    <div>
+                        <div class="relative max-w-sm">
+                            <input
+                                id="tanggal"
+                                datepicker
+                                type="text"
+                                class="py-3 px-4 pe-9 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Pilih Tanggal"
+                                autocomplete="off"
+                            />
+                            <div
+                                class="absolute inset-y-0 right-2 flex items-center pointer-events-none"
+                            >
+                                <svg
+                                    class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Waktu Jemput/Ambil -->
+                <div class="flex flex-col gap-2 w-full">
+                    <label for="waktu-jemput">Waktu Jemput/Ambil</label>
+                    <div>
+                        <select
+                            id="waktu-jemput"
+                            class="py-3 px-4 pe-9 block w-full border-gray-300 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
+                        >
+                            <option selected>Pilih Waktu</option>
+                            <option value="08:00">08:00 WIB</option>
+                            <option value="09:00">09:00 WIB</option>
+                            <option value="10:00">10:00 WIB</option>
+                            <option value="11:00">11:00 WIB</option>
+                            <option value="12:00">12:00 WIB</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Jumlah Penumpang -->
+                <div class="flex flex-col gap-2 w-full">
+                    <label for="jumlah-penumpang">Jumlah Penumpang</label>
+                    <div>
+                        <input
+                            id="jumlah-penumpang"
+                            type="number"
+                            class="py-3 px-4 block w-full border-gray-300 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
+                            placeholder="Jumlah Penumpang"
+                        />
+                    </div>
+                </div>
+                <button
+                    id="button-cari-mobil"
+                    class="font-medium w-1/2 bg-green-primary px-4 py-3 rounded-md hover:bg-green-hover text-white transition-all self-end"
+                >
+                    Cari Mobil
+                </button>
             </div>
         </section>
 
         <!-- Cars Result -->
-        <section class="mt-32 px-4 lg:px-28">
+        <section class="mt-14 px-4 lg:px-28">
             <div class="flex gap-8 flex-wrap justify-center" id="cars-card-container"></div>
         </section>
 
