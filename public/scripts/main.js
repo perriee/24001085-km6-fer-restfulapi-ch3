@@ -16,8 +16,13 @@ const params = Object.fromEntries(urlSearchParams.entries());
 const app = new App();
 
 app.buttonCariMobil.addEventListener("click", () => {
-    app.clear();
-    app.runFilteredCars();
+    if (app.tipeDriver.value !== "" && app.tanggal.value !== "" && app.waktuJemput.value !== "") {
+        app.clear();
+        app.runFilteredCars();
+    } else {
+        app.emptyInputMessage();
+    }
+
     console.log("Button Cari Mobil Clicked");
 });
 

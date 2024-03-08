@@ -29,12 +29,14 @@ class App {
 
         if (Car.list.length === 0) {
             const node = document.createElement("div");
-            node.innerHTML = `<div class="text-2xl italic">Mobil tidak ditemukan</div>`;
+            node.innerHTML = `<div class="bg-red-100 border border-red-200 text-lg text-red-800 rounded-lg p-4 dark:bg-red-800/10 dark:border-red-900 dark:text-red-500" role="alert">
+            <span class="font-bold">Maaf</span>, mobil tidak tersedia!
+          </div>`;
             this.carsCardContainer.appendChild(node);
         }
 
         Car.list.forEach((car) => {
-            const node = document.createElement("slot");
+            const node = document.createElement("div");
             node.innerHTML = car.render();
             this.carsCardContainer.appendChild(node);
         });
@@ -70,6 +72,15 @@ class App {
         console.log("🚀 ~ App ~ cars ~ cars:", cars);
 
         Car.init(cars);
+    }
+
+    emptyInputMessage() {
+        this.carsCardContainer.innerHTML = "";
+        const node = document.createElement("div");
+        node.innerHTML = `<div class="bg-red-100 border border-red-200 text-lg text-red-800 rounded-lg p-4 dark:bg-red-800/10 dark:border-red-900 dark:text-red-500" role="alert">
+        <span class="font-bold">Harap</span> isi filter diatas terlebih dahulu!
+      </div>`;
+        this.carsCardContainer.appendChild(node);
     }
 
     clear = () => {
