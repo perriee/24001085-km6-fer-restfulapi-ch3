@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Binar Car Rental</title>
+        <link rel="icon" href="./images/logo_binar_academy.png" />
+        <link rel="stylesheet" href="./css/output.css" />
+
+        <!-- Slick Carousel -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+            integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+            integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+
+    <body>
+        <!-- Start Navbar -->
+        <header
+            class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-primary text-sm py-2"
+        >
+            <nav
+                class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+                aria-label="Global"
+            >
+                <div class="flex items-center justify-between">
+                    <a
+                        class="flex-none text-xl font-semibold flex flex-wrap justify-center max-w-screen-xl items-center"
+                        href="https://www.binaracademy.com/"
+                    >
+                        <img
+                            src="./images/logo_binar.png"
+                            alt="Logo Binar"
+                            class="mr-1 h-10 lg:h-14"
+                        />
+                        <span>Binar Car Rental</span>
+                    </a>
+                    <div class="sm:hidden">
+                        <button
+                            type="button"
+                            class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-primary text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                            data-hs-collapse="#navbar-with-collapse"
+                            aria-controls="navbar-with-collapse"
+                            aria-label="Toggle navigation"
+                        >
+                            <svg
+                                class="hs-collapse-open:hidden flex-shrink-0 size-4"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="3" x2="21" y1="6" y2="6" />
+                                <line x1="3" x2="21" y1="12" y2="12" />
+                                <line x1="3" x2="21" y1="18" y2="18" />
+                            </svg>
+                            <svg
+                                class="hs-collapse-open:block hidden flex-shrink-0 size-4"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path d="M18 6 6 18" />
+                                <path d="m6 6 12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div id="navbar-with-collapse" class="hidden basis-full grow sm:block">
+                    <div
+                        class="flex flex-col gap-7 text-md mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5"
+                    >
+                        <a
+                            class="font-medium text-gray-600"
+                            href="#block-our-services"
+                            aria-current="page"
+                            >Our Services</a
+                        >
+                        <a
+                            class="font-medium text-gray-600 hover:text-gray-400"
+                            href="#block-why-us"
+                            >Why Us</a
+                        >
+                        <a
+                            class="font-medium text-gray-600 hover:text-gray-400"
+                            href="#block-testimonial"
+                            >Testimonial</a
+                        >
+                        <a class="font-medium text-gray-600 hover:text-gray-400" href="#block-faq"
+                            >FAQ</a
+                        >
+                        <a
+                            class="font-medium w-fit bg-green-primary px-3 py-2 rounded-md hover:bg-green-hover text-white transition-all"
+                            href="#"
+                            >Register</a
+                        >
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Start Hero -->
+        <section id="block-hero" class="bg-[#F1F3FF]">
+            <div class="container pt-6 lg:pt-20 px-5 lg:px-[8.5rem]">
+                <div class="flex flex-col gap-8 lg:gap-0 lg:flex-row max-w-screen-xl mx-auto">
+                    <div class="flex flex-col justify-center items-start mr-auto">
+                        <h1 class="max-w-2xl mb-5 text-4xl font-bold">
+                            Sewa & Rental Mobil Terbaik di kawasan Jogja
+                        </h1>
+                        <p
+                            class="max-w-2xl mb-6 lg:pr-28 text-slate-500 lg:mb-7 md:text-lg lg:text-xl"
+                        >
+                            Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas
+                            terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk
+                            sewa mobil selama 24 jam.
+                        </p>
+                        <a
+                            href="./cars.html"
+                            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-green-primary hover:bg-green-hover"
+                        >
+                            Mulai Sewa Mobil
+                        </a>
+                    </div>
+                    <div class="-mr-[1.2rem] lg:-mr-[8.5rem]">
+                        <img src="./images/img_car.png" alt="mockup" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start Our Services -->
+        <section id="block-our-services">
+            <div class="container pt-16 lg:pt-28 px-5 lg:px-52">
+                <div
+                    class="flex flex-col justify-center gap-6 items-center lg:flex-row max-w-screen-xl lg:gap-24"
+                >
+                    <img src="./images/img_service.png" alt="mockup" class="w-[70%] lg:w-auto" />
+                    <div class="flex flex-col justify-center">
+                        <h1 class="max-w-2xl mb-5 text-3xl font-bold">
+                            Best Car Rental for any kind of trip in Jogja!
+                        </h1>
+                        <p
+                            class="max-w-2xl mb-6 lg:pr-16 text-slate-500 lg:mb-8 text-lg lg:text-lg"
+                        >
+                            Sewa mobil di Jogja bersama Binar Car Rental jaminan harga lebih murah
+                            dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan
+                            terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.
+                        </p>
+                        <div class="flex flex-col gap-4">
+                            <div class="flex items-center text-slate-800 gap-3 text-md">
+                                <img
+                                    src="./images/icon_check.png"
+                                    alt="Icon Check"
+                                    class="w-[1.5rem] h-[1.5rem]"
+                                />Sewa Mobil Dengan Supir di Jogja 12 Jam
+                            </div>
+                            <div class="flex items-center text-slate-800 gap-3 text-md">
+                                <img
+                                    src="./images/icon_check.png"
+                                    alt="Icon Check"
+                                    class="w-[1.5rem] h-[1.5rem]"
+                                />Sewa Mobil Lepas Kunci di Jogja 24 Jam
+                            </div>
+                            <div class="flex items-center text-slate-800 gap-3 text-md">
+                                <img
+                                    src="./images/icon_check.png"
+                                    alt="Icon Check"
+                                    class="w-[1.5rem] h-[1.5rem]"
+                                />Sewa Mobil Jangka Panjang Bulanan
+                            </div>
+                            <div class="flex items-center text-slate-800 gap-3 text-md">
+                                <img
+                                    src="./images/icon_check.png"
+                                    alt="Icon Check"
+                                    class="w-[1.5rem] h-[1.5rem]"
+                                />Gratis Antar - Jemput Mobil di Bandara
+                            </div>
+                            <div class="flex items-center text-slate-800 gap-3 text-md">
+                                <img
+                                    src="./images/icon_check.png"
+                                    alt="Icon Check"
+                                    class="w-[1.5rem] h-[1.5rem]"
+                                />Layanan Airport Transfer / Drop In Out
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start Why Us -->
+        <section id="block-why-us">
+            <div class="container pt-16 lg:pt-28 px-5 lg:px-[8.5rem]">
+                <div
+                    class="flex flex-col justify-center items-center lg:items-start mb-[1.5rem] lg:mb-10 gap-5"
+                >
+                    <h1 class="text-3xl font-bold text-slate-800">Why Us?</h1>
+                    <p class="text-base text-slalte-700">Mengapa harus pilih Binar Car Rental?</p>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-4 lg:gap-8">
+                    <div
+                        class="flex flex-col border-2 border-[#D0D0D0] rounded-xl p-[1.5rem] gap-4 w-full hover:shadow-md lg:hover:shadow-lg hover:shadow-[#F9CC00] lg:hover:shadow-[#F9CC00] duration-500"
+                    >
+                        <img
+                            src="./images/icon_mobil_lengkap.png"
+                            alt="Icon Mobil Lengkap"
+                            class="w-[2rem]"
+                        />
+                        <h4 class="text-lg font-bold tracking-wide">Mobil Lengkap</h4>
+                        <p class="text-base text-slate-700">
+                            Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col border-2 border-[#D0D0D0] rounded-xl p-[1.5rem] gap-4 w-full hover:shadow-md lg:hover:shadow-lg hover:shadow-[#FA2C5A] lg:hover:shadow-[#FA2C5A] duration-500"
+                    >
+                        <img
+                            src="./images/icon_harga_murah.png"
+                            alt="Icon Harga Murah"
+                            class="w-[2rem]"
+                        />
+                        <h4 class="text-lg font-bold tracking-wide">Harga Murah</h4>
+                        <p class="text-base text-slate-700">
+                            Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil
+                            lain
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col border-2 border-[#D0D0D0] rounded-xl p-[1.5rem] gap-4 w-full hover:shadow-md lg:hover:shadow-lg hover:shadow-[#0D28A6] lg:hover:shadow-[#0D28A6] duration-500"
+                    >
+                        <img
+                            src="./images/icon_layanan_24_jam.png"
+                            alt="Icon Layanan 24 Jam"
+                            class="w-[2rem]"
+                        />
+                        <h4 class="text-lg font-bold tracking-wide">Layanan 24 Jam</h4>
+                        <p class="text-base text-slate-700">
+                            Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia
+                            di akhir minggu
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col border-2 border-[#D0D0D0] rounded-xl p-[1.5rem] gap-4 w-full hover:shadow-md lg:hover:shadow-lg hover:shadow-[#5CB85F] lg:hover:shadow-[#5CB85F] duration-500"
+                    >
+                        <img
+                            src="./images/icon_sopir_profesional.png"
+                            alt="Icon Sopir Profesional"
+                            class="w-[2rem]"
+                        />
+                        <h4 class="text-lg font-bold tracking-wide">Sopir Profesional</h4>
+                        <p class="text-base text-slate-700">
+                            Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat
+                            waktu
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start Testimonials -->
+        <section id="block-testimonial">
+            <div class="container pt-16 lg:pt-28 px-5 lg:px-[8.5rem]">
+                <div class="flex flex-col justify-center items-center mb-[1.5rem] lg:mb-10 gap-5">
+                    <h1 class="text-3xl font-bold text-slate-800">Testimonial</h1>
+                    <p class="text-base text-slate-700 text-center">
+                        Berbagai review positif dari para pelanggan kami
+                    </p>
+                </div>
+            </div>
+
+            <!-- Carousel -->
+            <div class="slick-slider overflow-hidden">
+                <div class="bg-primary rounded-xl mx-2">
+                    <div class="flex flex-col lg:gap-8 lg:flex-row py-[2.5rem] px-8 h-full">
+                        <div class="flex justify-center pb-6">
+                            <img
+                                src="./images/img_testi_1.png"
+                                alt="Fulan"
+                                class="w-[5rem] lg:w-80 object-contain"
+                            />
+                        </div>
+                        <div class="flex flex-col lg:items-start lg:justify-center">
+                            <div class="flex justify-center lg:justify-start pb-6 lg:pb-2">
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                            </div>
+                            <p class="text-slate-800 pb-2 lg:pb-1">
+                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod”
+                            </p>
+                            <p class="font-bold text-slate-800">John Dee 32, Bromo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-primary rounded-xl mx-2">
+                    <div class="flex flex-col lg:gap-8 lg:flex-row py-[2.5rem] px-8 h-full">
+                        <div class="flex justify-center pb-6">
+                            <img
+                                src="./images/img_testi_2.png"
+                                alt="Fulan"
+                                class="w-[5rem] lg:w-80 object-contain"
+                            />
+                        </div>
+                        <div class="flex flex-col lg:items-start lg:justify-center">
+                            <div class="flex justify-center lg:justify-start pb-6 lg:pb-2">
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                            </div>
+                            <p class="text-slate-800 pb-2 lg:pb-1">
+                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod”
+                            </p>
+                            <p class="font-bold text-slate-800">John Dee 32, Bromo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-primary rounded-xl mx-2">
+                    <div class="flex flex-col lg:gap-8 lg:flex-row py-[2.5rem] px-8 h-full">
+                        <div class="flex justify-center pb-6">
+                            <img
+                                src="./images/img_testi_1.png"
+                                alt="Fulan"
+                                class="w-[5rem] lg:w-80 object-contain"
+                            />
+                        </div>
+                        <div class="flex flex-col lg:items-start lg:justify-center">
+                            <div class="flex justify-center lg:justify-start pb-6 lg:pb-2">
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                            </div>
+                            <p class="text-slate-800 pb-2 lg:pb-1">
+                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod”
+                            </p>
+                            <p class="font-bold text-slate-800">John Dee 32, Bromo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-primary rounded-xl mx-2">
+                    <div class="flex flex-col lg:gap-8 lg:flex-row py-[2.5rem] px-8 h-full">
+                        <div class="flex justify-center pb-6">
+                            <img
+                                src="./images/img_testi_2.png"
+                                alt="Fulan"
+                                class="w-[5rem] lg:w-80 object-contain"
+                            />
+                        </div>
+                        <div class="flex flex-col lg:items-start lg:justify-center">
+                            <div class="flex justify-center lg:justify-start pb-6 lg:pb-2">
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                            </div>
+                            <p class="text-slate-800 pb-2 lg:pb-1">
+                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod”
+                            </p>
+                            <p class="font-bold text-slate-800">John Dee 32, Bromo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-primary rounded-xl mx-2">
+                    <div class="flex flex-col lg:gap-8 lg:flex-row py-[2.5rem] px-8 h-full">
+                        <div class="flex justify-center pb-6">
+                            <img
+                                src="./images/img_testi_1.png"
+                                alt="Fulan"
+                                class="w-[5rem] lg:w-80 object-contain"
+                            />
+                        </div>
+                        <div class="flex flex-col lg:items-start lg:justify-center">
+                            <div class="flex justify-center lg:justify-start pb-6 lg:pb-2">
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                                <img src="./images/icon_star.png" alt="Icon Star" class="w-4" />
+                            </div>
+                            <p class="text-slate-800 pb-2 lg:pb-1">
+                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod”
+                            </p>
+                            <p class="font-bold text-slate-800">John Dee 32, Bromo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start Sewa Mobil -->
+        <section id="block-sewa-mobil">
+            <div class="container pt-16 lg:pt-28 px-5 lg:px-[8.5rem]">
+                <div class="flex flex-col bg-[#0D28A6] rounded-2xl p-16 gap-10">
+                    <h1 class="text-white text-center text-3xl lg:text-4xl font-bold leading-10">
+                        Sewa Mobil di Jogja Sekarang
+                    </h1>
+                    <p class="text-white text-center leading-6 lg:px-80 font-thin">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <div class="flex justify-center">
+                        <a
+                            href="./cars.html"
+                            class="px-4 py-3 transition-all text-base font-medium text-center text-white rounded-md bg-[#5CB85F] hover:bg-[#428745]"
+                        >
+                            Mulai Sewa Mobil
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start FAQ -->
+        <section id="block-faq">
+            <div class="container pt-16 lg:pt-28 px-5 lg:px-[8.5rem]">
+                <div class="flex flex-col lg:gap-[6rem] lg:flex-row">
+                    <div class="flex flex-col lg:w-1/3">
+                        <h1
+                            class="text-2xl lg:text-3xl text-slate-800 text-center lg:text-start font-bold pb-4"
+                        >
+                            Frequently Asked Question
+                        </h1>
+                        <p class="text-slate-700 text-base text-center lg:text-start pb-[1.5rem]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                        </p>
+                    </div>
+
+                    <!-- Accordion -->
+                    <div class="flex lg:w-2/3">
+                        <div class="hs-accordion-group">
+                            <div
+                                class="hs-accordion active bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg"
+                                id="hs-bordered-heading-one"
+                            >
+                                <button
+                                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none"
+                                    aria-controls="hs-basic-bordered-collapse-one"
+                                >
+                                    <span>Apa saja syarat yang dibutuhkan ?</span>
+                                    <svg
+                                        class="hs-accordion-active:hidden block size-4"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path d="M5 12h14" />
+                                        <path d="M12 5v14" />
+                                    </svg>
+                                    <svg
+                                        class="hs-accordion-active:block hidden size-4"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path d="M5 12h14" />
+                                    </svg>
+                                </button>
+                                <div
+                                    id="hs-basic-bordered-collapse-one"
+                                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+                                    aria-labelledby="hs-bordered-heading-one"
+                                >
+                                    <div class="pb-4 px-5">
+                                        <p class="text-gray-800">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Error iste veniam placeat accusamus commodi hic, aperiam
+                                            quod fugit labore dolorum accusantium quas. Ea unde
+                                            obcaecati atque distinctio aspernatur hic odio.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg"
+                                id="hs-bordered-heading-two"
+                            >
+                                <button
+                                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none"
+                                    aria-controls="hs-basic-bordered-collapse-two"
+                                >
+                                    <span>Berapa hari minimal sewa mobil lepas kunci ?</span>
+                                    <svg
+                                        class="hs-accordion-active:hidden block size-4"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path d="M5 12h14" />
+                                        <path d="M12 5v14" />
+                                    </svg>
+                                    <svg
+                                        class="hs-accordion-active:block hidden size-4"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path d="M5 12h14" />
+                                    </svg>
+                                </button>
+                                <div
+                                    id="hs-basic-bordered-collapse-two"
+                                    class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                                    aria-labelledby="hs-bordered-heading-two"
+                                >
+                                    <div class="pb-4 px-5">
+                                        <p class="text-gray-800">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Dicta, quae quis laborum fugiat quasi porro explicabo
+                                            vero nulla rem omnis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg"
+                                id="hs-bordered-heading-two"
+                            >
+                                <button
+                                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none"
+                                    aria-controls="hs-basic-bordered-collapse-two"
+                                >
+                                    <span
+                                        >Berapa hari sebelumnya sabaiknya booking sewa mobil ?</span
+                                    >
+                                    <svg
+                                        class="hs-accordion-active:hidden block size-4"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path d="M5 12h14" />
+                                        <path d="M12 5v14" />
+                                    </svg>
+                                    <svg
+                                        class="hs-accordion-active:block hidden size-4"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path d="M5 12h14" />
+                                    </svg>
+                                </button>
+                                <div
+                                    id="hs-basic-bordered-collapse-two"
+                                    class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                                    aria-labelledby="hs-bordered-heading-two"
+                                >
+                                    <div class="pb-4 px-5">
+                                        <p class="text-gray-800">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Dicta, quae quis laborum fugiat quasi porro explicabo
+                                            vero nulla rem omnis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg"
+                                id="hs-bordered-heading-two"
+                            >
+                                <button
+                                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none"
+                                    aria-controls="hs-basic-bordered-collapse-two"
+                                >
+                                    <span>Apakah ada biaya antar-jemput ?</span>
+                                    <svg
+                                        class="hs-accordion-active:hidden block size-4"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path d="M5 12h14" />
+                                        <path d="M12 5v14" />
+                                    </svg>
+                                    <svg
+                                        class="hs-accordion-active:block hidden size-4"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path d="M5 12h14" />
+                                    </svg>
+                                </button>
+                                <div
+                                    id="hs-basic-bordered-collapse-two"
+                                    class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                                    aria-labelledby="hs-bordered-heading-two"
+                                >
+                                    <div class="pb-4 px-5">
+                                        <p class="text-gray-800">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Dicta, quae quis laborum fugiat quasi porro explicabo
+                                            vero nulla rem omnis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg"
+                                id="hs-bordered-heading-two"
+                            >
+                                <button
+                                    class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none"
+                                    aria-controls="hs-basic-bordered-collapse-two"
+                                >
+                                    <span>Bagaimana jika terjadi kecelakaan ?</span>
+                                    <svg
+                                        class="hs-accordion-active:hidden block size-4"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path d="M5 12h14" />
+                                        <path d="M12 5v14" />
+                                    </svg>
+                                    <svg
+                                        class="hs-accordion-active:block hidden size-4"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <path d="M5 12h14" />
+                                    </svg>
+                                </button>
+                                <div
+                                    id="hs-basic-bordered-collapse-two"
+                                    class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                                    aria-labelledby="hs-bordered-heading-two"
+                                >
+                                    <div class="pb-4 px-5">
+                                        <p class="text-gray-800">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Dicta, quae quis laborum fugiat quasi porro explicabo
+                                            vero nulla rem omnis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start Footer -->
+        <footer id="block-footer">
+            <div class="container mb-20 lg:mb-28 pt-16 lg:pt-40 px-5 lg:px-[8.5rem]">
+                <div class="flex flex-col lg:flex-row lg:justify-between gap-4">
+                    <div class="flex flex-col gap-4">
+                        <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+                        <p>binarcarrental@gmail.com</p>
+                        <p>081-233-334-808</p>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <a href="#block-our-services" class="font-bold">Our Services</a>
+                        <a href="#block-why-us" class="font-bold">Why Us</a>
+                        <a href="#block-testimonial" class="font-bold">Testimonial</a>
+                        <a href="#block-faq" class="font-bold">FAQ</a>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <p>Connect with us</p>
+                        <div class="flex gap-4">
+                            <a href="https://www.facebook.com/binaracademy" target="_blank">
+                                <img
+                                    src="./images/icon_facebook.png"
+                                    alt="Icon Facebook"
+                                    class="w-[2rem] h-[2rem]"
+                                />
+                            </a>
+                            <a href="https://www.instagram.com/academybinar" target="_blank">
+                                <img
+                                    src="./images/icon_instagram.png"
+                                    alt="Icon Instagram"
+                                    class="w-[2rem] h-[2rem]"
+                                />
+                            </a>
+                            <a href="https://twitter.com/academybinar" target="_blank">
+                                <img
+                                    src="./images/icon_twitter.png"
+                                    alt="Icon Twitter"
+                                    class="w-[2rem] h-[2rem]"
+                                />
+                            </a>
+                            <a href="mailto:info@binar.co.id" target="_blank">
+                                <img
+                                    src="./images/icon_mail.png"
+                                    alt="Icon Mail"
+                                    class="w-[2rem] h-[2rem]"
+                                />
+                            </a>
+                            <a href="https://www.twitch.tv/binary_studio_academy" target="_blank">
+                                <img
+                                    src="./images/icon_twitch.png"
+                                    alt="Icon Twitch"
+                                    class="w-[2rem] h-[2rem]"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <p>Copyright Binar 2022</p>
+                        <a href="https://www.binaracademy.com" target="_blank">
+                            <div class="flex gap-3 items-center">
+                                <img
+                                    src="./images/logo_binar_academy.png"
+                                    alt="Logo Binar"
+                                    class="w-[2rem] h-[2rem]"
+                                />
+                                <p class="font-bold">Binar Car Rental</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Preline UI -->
+        <script src="./js/preline.js"></script>
+
+        <!-- JQuery -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+            integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <!-- Slick Carousel -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+            integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <!-- My JS -->
+        <script type="text/javascript" src="./js/slick.js"></script>
+    </body>
+</html>

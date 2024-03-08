@@ -7,6 +7,13 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./public/css/output.css --watch",
     "start": "node server/index.js"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "preline": "^2.0.3"
   }
 }
