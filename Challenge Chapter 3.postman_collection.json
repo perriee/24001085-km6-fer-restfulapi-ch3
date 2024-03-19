@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "fd96ae73-e8d6-4726-9d42-11c9c99230a3",
+		"name": "Challenge Chapter 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27037203"
+	},
+	"item": [
+		{
+			"name": "Get All Cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5500/cars?jumlahPenumpang=6&tanggal=03/24/2022&waktuJemput=09:00",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"cars"
+					],
+					"query": [
+						{
+							"key": "jumlahPenumpang",
+							"value": "6"
+						},
+						{
+							"key": "tanggal",
+							"value": "03/24/2022"
+						},
+						{
+							"key": "waktuJemput",
+							"value": "09:00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Car",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5500/cars/6e2bc663-5197-441a-957b-bc75e4a2da7c",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"cars",
+						"6e2bc663-5197-441a-957b-bc75e4a2da7c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"plate\": \"KB-3456-CA\",\r\n    \"manufacture\": \"Daihatsu\",\r\n    \"model\": \"Calya\",\r\n    \"image\": \"./images/car01.min.jpg\",\r\n    \"rentPerDay\": 200000,\r\n    \"capacity\": 4,\r\n    \"description\": \"Brake assist. Leather-wrapped shift knob. Glove box lamp. Air conditioning w/in-cabin microfilter.\",\r\n    \"availableAt\": \"2022-03-23T15:49:05.563Z\",\r\n    \"transmission\": \"Manual\",\r\n    \"available\": true,\r\n    \"type\": \"Family\",\r\n    \"year\": 2022,\r\n    \"options\": [\r\n        \"Cruise Control\",\r\n        \"Tinted Glass\",\r\n        \"AM/FM Stereo\"\r\n    ],\r\n    \"specs\": [\r\n        \"Brake assist\",\r\n        \"Leather-wrapped shift knob\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5500/cars",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Car",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"plate\": \"KB 8473 ER\",\r\n    \"manufacture\": \"Toyota\",\r\n    \"model\": \"Agya\",\r\n    \"image\": \"./images/car01.min.jpg\",\r\n    \"rentPerDay\": 100000,\r\n    \"capacity\": 2,\r\n    \"description\": \"Brake assist. Leather-wrapped shift knob. Glove box lamp. Air conditioning w/in-cabin microfilter.\",\r\n    \"availableAt\": \"2022-03-23T15:49:05.563Z\",\r\n    \"transmission\": \"Manual\",\r\n    \"available\": true,\r\n    \"type\": \"Sedan\",\r\n    \"year\": 2022,\r\n    \"options\": [\r\n        \"Cruise Control\",\r\n        \"Tinted Glass\"\r\n    ],\r\n    \"specs\": [\r\n        \"Brake assist\",\r\n        \"Leather-wrapped shift knob\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5500/cars/6e2bc663-5197-441a-957b-bc75e4a2da7c",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"cars",
+						"6e2bc663-5197-441a-957b-bc75e4a2da7c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Car",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5500/cars/6e2bc663-5197-441a-957b-bc75e4a2da7c",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"cars",
+						"6e2bc663-5197-441a-957b-bc75e4a2da7c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
