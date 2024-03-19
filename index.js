@@ -3,10 +3,12 @@ const route = require("./route");
 
 // Initiate Express
 const app = express();
-const port = 3000;
+const port = 5500;
 
 // Enable request body JSON
 app.use(express.json());
+
+app.use(express.static("public"));
 
 // "/"
 app.use("/", route);
@@ -19,8 +21,6 @@ app.use("*", (req, res) => {
 
     res.status(404).json(response);
 });
-
-app.use(express.static("public"));
 
 // Error middleware
 app.use((err, req, res, next) => {

@@ -1,29 +1,46 @@
-/*
- * Contoh kode untuk membaca query parameter,
- * Siapa tau relevan! :)
- * */
+import cars from "./car.js";
 
-const urlSearchParams = new URLSearchParams(window.location.search);
-const params = Object.fromEntries(urlSearchParams.entries());
+const carsCardContainer = document.getElementById("cars-card-container");
+const buttonCariMobil = document.getElementById("button-cari-mobil");
 
-// Coba olah data ini hehe :)
-// console.log("🚀 ~ params:", params);
+const tanggal = document.getElementById("tanggal");
+const waktuJemput = document.getElementById("waktu-jemput");
+const jumlahPenumpang = document.getElementById("jumlah-penumpang");
 
-/*
- * Contoh penggunaan DOM di dalam class
- * */
+async function getAllCarsData() {
+    let fetchCars = await cars.getCarsData();
 
-const app = new App();
+    carsCardContainer.innerHTML = "";
 
-app.buttonCariMobil.addEventListener("click", () => {
-    if (app.tipeDriver.value !== "" && app.tanggal.value !== "" && app.waktuJemput.value !== "") {
-        app.clear();
-        app.runFilteredCars();
-    } else {
-        app.emptyInputMessage();
+    fetchCars.data.forEach((car) => {
+        const node = document.createElement("div");
+        node.innerHTML = cars.render(car);
+        carsCardContainer.appendChild(node);
+    });
+}
+
+buttonCariMobil.addEventListener("click", async () => {
+    const jp = jumlahPenumpang.value;
+    const tgl = tanggal.value;
+    const wkt = waktuJemput.value;
+
+    let fetchCarsFiltered = await cars.getCarsDataFiltered(jp, tgl, wkt);
+
+    carsCardContainer.innerHTML = "";
+
+    if (fetchCarsFiltered.data.length === 0) {
+        const node = document.createElement("div");
+        node.innerHTML = `<div class="bg-red-100 border border-red-200 text-lg text-red-800 rounded-lg p-4 dark:bg-red-800/10 dark:border-red-900 dark:text-red-500" role="alert">
+            <span class="font-bold">Maaf</span>, mobil tidak tersedia!
+          </div>`;
+        carsCardContainer.appendChild(node);
     }
 
-    console.log("Button Cari Mobil Clicked");
+    fetchCarsFiltered.data.forEach((car) => {
+        const node = document.createElement("div");
+        node.innerHTML = cars.render(car);
+        carsCardContainer.appendChild(node);
+    });
 });
 
-app.init();
+getAllCarsData();
